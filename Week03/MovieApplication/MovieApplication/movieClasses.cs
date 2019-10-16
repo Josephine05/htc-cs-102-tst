@@ -9,10 +9,11 @@ namespace MovieApplication
 {
     class movieClasses
     {
-        public string Title;
+        public string Title { get; set; }
+        public string Genre { get; set; }
+        public double ReviewScore { get; set; }
+
         public List<string> Actors;
-        public string Genre;
-        public double ReviewScore;
 
         public movieClasses(string title, string genre, double reviewScore)
         {
