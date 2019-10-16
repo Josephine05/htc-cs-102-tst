@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace MovieApplication
 {
@@ -13,7 +14,16 @@ namespace MovieApplication
         public string Genre;
         public double ReviewScore;
 
-        public void Watch()
-        { }
+        public movieClasses(string title, string genre, double reviewScore)
+        {
+            Title = title;
+            Genre = genre;
+            ReviewScore = reviewScore;
+        }
+
+        public void DisplayInfomation() 
+        {
+            MessageBox.Show($"Title:{Title} \n Genre:{Genre} \n ReviewScore:{ReviewScore}");
+        }
     }
 }
