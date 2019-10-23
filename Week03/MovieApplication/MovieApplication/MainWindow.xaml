@@ -36,7 +36,7 @@
         <TextBox x:Name="reviewscoreTextBox" HorizontalAlignment="Left" Height="28" Margin="424,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160"/>
         <Label x:Name="Reviewscorelabel" Content="Review Score" HorizontalAlignment="Left" Margin="461,302,0,0" VerticalAlignment="Top" Width="102" Height="31"/>
         <Button x:Name="SubmitMovieButton" Content="Submit" HorizontalAlignment="Left" Margin="466,400,0,0" VerticalAlignment="Top" Width="97" Click="SubmitMovieButton_Click" Height="24"/>
-        <ListView x:Name="MovieListView" HorizontalAlignment="Left" Height="271" Margin="10,10,0,0" VerticalAlignment="Top" Width="625">
+        <ListView x:Name="MovieListView" HorizontalAlignment="Left" Height="271" Margin="10,10,0,0" VerticalAlignment="Top" Width="625" MouseDoubleClick="MovieListView_MouseDoubleClick">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="150" Header="Title" DisplayMemberBinding="{Binding Title}"></GridViewColumn>
