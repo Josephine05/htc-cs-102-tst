@@ -37,7 +37,7 @@
         </ListView>
         <TextBox x:Name="directorTextBox" HorizontalAlignment="Left" Height="43" Margin="614,447,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
         <TextBlock x:Name="directorLabel" HorizontalAlignment="Left" Height="47" Margin="668,418,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Text="Director"/>
-        <TextBox x:Name="lengthTextBox" HorizontalAlignment="Left" Height="43" Margin="770,449,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
+        <TextBox x:Name="lengthTextBox" HorizontalAlignment="Left" Height="43" Margin="761,459,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142"/>
         <TextBlock x:Name="lengthLabel" HorizontalAlignment="Left" Height="47" Margin="828,418,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" Text="Length"/>
 
     </Grid>
