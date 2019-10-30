@@ -47,8 +47,18 @@ namespace InheritanceIntro
             // Loop through the list and call a method on the objects
             foreach (Dog d in dogs)
             {
-                d.SayName();
+                d.sayName();
             }
+            Duck duck = new Duck(102, "Hai");
+            duck.sayName();
+        }
+
+        private void quackButton_Click(object sender, RoutedEventArgs e)
+        {
+            //make duck
+            //make it quack
+            Duck duck = new Duck(12, "Fredrick");
+            duck.Quack();
         }
     }
 }
