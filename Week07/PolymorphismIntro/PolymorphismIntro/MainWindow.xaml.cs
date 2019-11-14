@@ -27,12 +27,14 @@ namespace PolymorphismIntro
             InitializeComponent();
             Animals = new ObservableCollection<Animal>();
 
-            Frog frog = new PolymorphismIntro.Frog(4, "Bart", true);
-            Dog dog = new Dog("Labradoodle", 35, "Pax");
-            Duck duck = new Duck(4, "Moo");
+            Frog frog = new PolymorphismIntro.Frog(4,"Bart", true, "Frog", 3000000);
+            Dog dog = new Dog("Labradoodle", 35, "Pax", "Dog", 7);
+            Duck duck = new Duck(4, "Duck", "Moo", 100);
+            Trumphair trumphair = new Trumphair(7, "Orange man hair", "Angry Mexican", 8);
             Animals.Add(frog);
             Animals.Add(dog);
             Animals.Add(duck);
+            Animals.Add(trumphair);
 
             lvAnimal.ItemsSource = Animals;
         }

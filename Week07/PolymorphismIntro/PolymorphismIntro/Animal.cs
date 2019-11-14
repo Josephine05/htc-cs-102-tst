@@ -11,6 +11,8 @@ namespace PolymorphismIntro
     {
         public int Height { get; set; }
         public string Name { get; set; }
+        public string Type { get; set; }
+        public int Weight { get; set; } 
         
 
         public void SayName()

@@ -16,10 +16,12 @@ namespace PolymorphismIntro
 
         public Duck() { }
 
-        public Duck(int height, string name)
+        public Duck(int height, string name, string type,int weight)
         {
             this.Height = height;
             this.Name = name;
+            this.Type = type;
+            this.Weight = weight;
         }
     }
 }

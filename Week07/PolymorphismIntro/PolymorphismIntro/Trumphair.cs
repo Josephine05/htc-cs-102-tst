@@ -7,24 +7,22 @@ using System.Windows;
 
 namespace PolymorphismIntro
 {
-    public class Dog : Animal
+    class Trumphair:Animal
     {
-        public string Breed;
-
         public override void Speak()
         {
-            MessageBox.Show("Bark");
+            MessageBox.Show("Taco Tuesday");
         }
 
-        public Dog() { }
+        public Trumphair() { }
 
-        public Dog(string breed, int height, string name, string type, int weight)
+        public Trumphair(int height, string name, string type, int weight)
         {
-            this.Breed = breed;
             this.Height = height;
             this.Name = name;
             this.Type = type;
             this.Weight = weight;
         }
     }
+
 }
