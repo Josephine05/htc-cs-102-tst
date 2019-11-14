@@ -8,7 +8,7 @@
         Title="MainWindow" Height="650" Width="665">
     <StackPanel Margin="0,0,2,0">
         <Button Click="SayName_Button_Click">Say Name</Button>
-        <ListView x:Name="lvAnimal" Height="100">
+        <ListView x:Name="lvAnimal" Height="584">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="150" Header=" Type" DisplayMemberBinding="{Binding Type}"/>

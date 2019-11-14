@@ -7,9 +7,10 @@ using System.Windows;
 
 namespace PolymorphismIntro
 {
-    public class Dog : Animal
+    public class Dog : Animal, Ianimal
     {
         public string Breed;
+        public string HairColor { get; set; }
 
         public override void Speak()
         {
