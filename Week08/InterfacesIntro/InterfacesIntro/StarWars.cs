@@ -3,20 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
 
 namespace InterfacesIntro
 {
-    public class Duck : Animal
+    class StarWars : Robot
     {
-        public override void Speak()
-        {
-            MessageBox.Show("Quack");
-        }
-
-        public Duck() { }
-
-        public Duck(int height, string name, double numlegs, double stridelength)
+        public StarWars(int height, string name, double numlegs, double stridelength)
         {
             this.Height = height;
             this.Name = name;

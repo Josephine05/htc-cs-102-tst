@@ -18,11 +18,13 @@ namespace InterfacesIntro
 
         public Frog() { }
 
-        public Frog(int height, string name, bool isPoisonous)
+        public Frog(int height, string name, bool isPoisonous, double numlegs, double stridelength)
         {
             this.IsPoisonous = isPoisonous;
             this.Height = height;
             this.Name = name;
+            this.NumLegs = numlegs;
+            this.strideLength = stridelength;
         }
     }
 }

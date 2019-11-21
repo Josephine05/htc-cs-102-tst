@@ -7,10 +7,16 @@ using System.Windows;
 
 namespace InterfacesIntro
 {
-    public class Animal
+    public class Animal : IWalker
     {
         public int Height { get; set; }
+
         public string Name { get; set; }
+
+        public double NumLegs { get; set; }
+
+
+        public double strideLength { get; set; }
 
         public void SayName()
         {
@@ -20,6 +26,11 @@ namespace InterfacesIntro
         public virtual void Speak()
         {
 
+        }
+
+        public void walk()
+        {
+            MessageBox.Show("I walk around with my " + NumLegs + " legs and have a stride length of " + strideLength + " miles");
         }
     }
 }
