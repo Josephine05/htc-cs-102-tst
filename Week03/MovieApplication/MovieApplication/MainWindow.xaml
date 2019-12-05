@@ -7,12 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <TextBox x:Name="TitletextBox" HorizontalAlignment="Left" Height="23" Margin="33,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123"/>
-        <Label x:Name="Title_Label" Content="Title" HorizontalAlignment="Left" Margin="77,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="TitletextBox_Copy" HorizontalAlignment="Left" Height="23" Margin="33,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123"/>
-        <Label x:Name="Title_Label_Copy" Content="Title" HorizontalAlignment="Left" Margin="77,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="genretextbox" HorizontalAlignment="Left" Height="23" Margin="32,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123"/>
-        <Label x:Name="Genrelabel" Content="Genre" HorizontalAlignment="Left" Margin="76,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="93*"/>
+            <ColumnDefinition Width="424*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="TitletextBox" HorizontalAlignment="Left" Height="23" Margin="33,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Grid.ColumnSpan="2"/>
+        <Label x:Name="Title_Label" Content="Title" HorizontalAlignment="Left" Margin="77,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="TitletextBox_Copy" HorizontalAlignment="Left" Height="23" Margin="33,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Grid.ColumnSpan="2"/>
+        <Label x:Name="Title_Label_Copy" Content="Title" HorizontalAlignment="Left" Margin="77,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="genretextbox" HorizontalAlignment="Left" Height="23" Margin="32,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Grid.ColumnSpan="2"/>
+        <Label x:Name="Genrelabel" Content="Genre" HorizontalAlignment="Left" Margin="76,83,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -22,9 +26,9 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <TextBox x:Name="reviewscoreTextBox" HorizontalAlignment="Left" Height="23" Margin="34,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123"/>
-        <Label x:Name="Reviewscorelabel" Content="Review Score" HorizontalAlignment="Left" Margin="62,163,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="SubmitMovieButton" Content="Submit" HorizontalAlignment="Left" Margin="62,256,0,0" VerticalAlignment="Top" Width="75" Click="SubmitMovieButton_Click"/>
+        <TextBox x:Name="reviewscoreTextBox" HorizontalAlignment="Left" Height="23" Margin="34,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" Grid.ColumnSpan="2"/>
+        <Label x:Name="Reviewscorelabel" Content="Review Score" HorizontalAlignment="Left" Margin="62,163,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Button x:Name="SubmitMovieButton" Content="Submit" HorizontalAlignment="Left" Margin="62,256,0,0" VerticalAlignment="Top" Width="75" Click="SubmitMovieButton_Click" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
