@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tic_tac_toe"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="416.379">
+        Title="MainWindow" Height="431.395" Width="416.379">
     <Grid Margin="0,0,2,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="242" Margin="160,34,0,0" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="242" Margin="146,34,0,0" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -21,7 +21,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="238" Margin="239,35,0,0" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="238" Margin="225,35,0,0" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -31,7 +31,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="237" Margin="202,-12,0,0" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="237" Margin="188,-12,0,0" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -41,7 +41,7 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="237" Margin="201,71,0,0" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="237" Margin="187,71,0,0" VerticalAlignment="Top" Width="1" RenderTransformOrigin="0.5,0.5">
             <Border.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleX="-1"/>
@@ -51,15 +51,21 @@
                 </TransformGroup>
             </Border.RenderTransform>
         </Border>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Height="55" Margin="254,206,0,0" VerticalAlignment="Top" Width="64"/>
-        <Button x:Name="button_Copy" Content="Button" HorizontalAlignment="Left" Height="55" Margin="254,123,0,0" VerticalAlignment="Top" Width="64"/>
-        <Button x:Name="button_Copy1" Content="Button" HorizontalAlignment="Left" Height="55" Margin="169,41,0,0" VerticalAlignment="Top" Width="64"/>
-        <Button x:Name="button_Copy2" Content="Button" HorizontalAlignment="Left" Height="55" Margin="254,41,0,0" VerticalAlignment="Top" Width="64"/>
-        <Button x:Name="button_Copy3" Content="Button" HorizontalAlignment="Left" Height="55" Margin="90,209,0,0" VerticalAlignment="Top" Width="64"/>
-        <Button x:Name="button_Copy4" Content="Button" HorizontalAlignment="Left" Height="55" Margin="90,120,0,0" VerticalAlignment="Top" Width="64"/>
-        <Button x:Name="button_Copy5" Content="Button" HorizontalAlignment="Left" Height="55" Margin="90,41,0,0" VerticalAlignment="Top" Width="64" Click="button_Copy5_Click"/>
-        <Button x:Name="button_Copy6" Content="Button" HorizontalAlignment="Left" Height="55" Margin="169,121,0,0" VerticalAlignment="Top" Width="64"/>
-        <Button x:Name="button_Copy7" Content="Button" HorizontalAlignment="Left" Height="55" Margin="169,209,0,0" VerticalAlignment="Top" Width="64"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="46" Margin="333,41,0,0" VerticalAlignment="Top" Width="63"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Height="55" Margin="240,206,0,0" VerticalAlignment="Top" Width="64" Click="button_Click"/>
+        <Button x:Name="button_Copy" Content="Button" HorizontalAlignment="Left" Height="55" Margin="240,123,0,0" VerticalAlignment="Top" Width="64" Click="button_Copy_Click"/>
+        <Button x:Name="button_Copy1" Content="Button" HorizontalAlignment="Left" Height="55" Margin="155,41,0,0" VerticalAlignment="Top" Width="64" Click="button_Copy1_Click"/>
+        <Button x:Name="button_Copy2" Content="Button" HorizontalAlignment="Left" Height="55" Margin="240,41,0,0" VerticalAlignment="Top" Width="64" Click="button_Copy2_Click"/>
+        <Button x:Name="button_Copy3" Content="Button" HorizontalAlignment="Left" Height="55" Margin="77,209,0,0" VerticalAlignment="Top" Width="64" Click="button_Copy3_Click"/>
+        <Button x:Name="button_Copy4" Content="Button" HorizontalAlignment="Left" Height="55" Margin="77,120,0,0" VerticalAlignment="Top" Width="64" Click="button_Copy4_Click"/>
+        <Button x:Name="button_Copy5" Content="Button" HorizontalAlignment="Left" Height="55" Margin="77,41,0,0" VerticalAlignment="Top" Width="64" Click="button_Copy5_Click"/>
+        <Button x:Name="button_Copy6" Content="Button" HorizontalAlignment="Left" Height="55" Margin="155,121,0,0" VerticalAlignment="Top" Width="64" Click="button_Copy6_Click"/>
+        <Button x:Name="button_Copy7" Content="Button" HorizontalAlignment="Left" Height="55" Margin="155,209,0,0" VerticalAlignment="Top" Width="64" Click="button_Copy7_Click"/>
+        <TextBox x:Name="Osname" HorizontalAlignment="Left" Height="21" Margin="86,304,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="113" TextChanged="Xsbox"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="21" Margin="269,304,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="113" RenderTransformOrigin="1.817,0.761"/>
+        <Button x:Name="Osbutton" Content="" HorizontalAlignment="Left" Margin="31,291,0,65" Width="50" RenderTransformOrigin="0.615,1.996" Click="Osbutton_Click"/>
+        <Button x:Name="Xsbutton" Content="" HorizontalAlignment="Left" Height="49" Margin="214,291,0,0" VerticalAlignment="Top" Width="52" Click="Xsbutton_Click"/>
+        <TextBlock x:Name="Xsbox" HorizontalAlignment="Left" Height="45" Margin="224,294,0,0" TextWrapping="Wrap" Text="X" VerticalAlignment="Top" Width="29" RenderTransformOrigin="0.626,-0.549" FontSize="35" FontFamily="Papyrus"/>
+        <TextBlock x:Name="OsWins" HorizontalAlignment="Left" Height="45" Margin="25,241,0,0" TextWrapping="Wrap" Text="O" VerticalAlignment="Top" Width="47" RenderTransformOrigin="0.626,-0.549" FontSize="35" FontFamily="Papyrus"/>
+        <Button x:Name="Wins" Content="Wins" HorizontalAlignment="Left" Margin="155,370,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Window>
