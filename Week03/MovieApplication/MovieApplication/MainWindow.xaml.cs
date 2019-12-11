@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,21 +20,42 @@ namespace MovieApplication
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
+
     {
+        ObservableCollection <movieClasses> movieList = new ObservableCollection<movieClasses>();
+
         public MainWindow()
         {
             InitializeComponent();
+            MovieListView.ItemsSource = movieList;
         }
 
         private void SubmitMovieButton_Click(object sender, RoutedEventArgs e)
         {
-            movieClasses submittedMovie = new movieClasses();
 
-            submittedMovie.Title = TitletextBox.Text;
-            submittedMovie.Genre = genretextbox.Text;
-            //submittedMovie.ReviewScore = Convert.ToDouble( reviewscoreTextBox.Text);
-            submittedMovie.ReviewScore = Double.Parse(reviewscoreTextBox.Text);
+            movieClasses submittedMovie = new movieClasses(TitletextBox_Copy.Text, genretextbox.Text, Double.Parse(reviewscoreTextBox.Text), directorTextBox.Text, Double.Parse(lengthTextBox.Text) );
+
+            movieList.Add(submittedMovie);
+            //submittedMovie.Title = TitletextBox_Copy.Text;
+            //submittedMovie.Genre = genretextbox.Text;
+            //submittedMovie.ReviewScore = Convert.ToDouble(reviewscoreTextBox.Text);
+            //submittedMovie.ReviewScore = Double.Parse(reviewscoreTextBox.Text);
+
+            //submittedMovie.DisplayInfomation();
+
+            TitletextBox_Copy.Clear();
+            genretextbox.Clear();
+            reviewscoreTextBox.Clear();
+            directorTextBox.Clear();
+            lengthTextBox.Clear()
         }
 
+        private void MovieListView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+           movieClasses selectedMovie = MovieListView.SelectedItem as movieClasses;
+
+            selectedMovie.DisplayInfomation();
+
+        }
     }
 }

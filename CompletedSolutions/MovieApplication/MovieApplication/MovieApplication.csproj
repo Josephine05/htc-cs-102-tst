@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CEBA7199-6191-46F7-A764-6D6537531967}</ProjectGuid>
+    <ProjectGuid>{3DAC90CD-CCF1-4B9D-ACFE-9CE6AFDE753D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MovieApplication</RootNamespace>
@@ -69,8 +69,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="movieClasses.cs" />
-    <Compile Include="ObserableCollection.cs" />
+    <Compile Include="Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
