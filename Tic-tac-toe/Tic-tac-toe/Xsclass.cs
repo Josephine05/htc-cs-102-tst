@@ -8,10 +8,10 @@ namespace Tic_tac_toe
 {
     class Xsclass : Players
     {
-        public Xsclass(int Wins, string Names)
+        public Xsclass(int Xswins, string Xsnames)
         {
-            this.Wins = Xswins;
-            this.Names = Names;
+            this.wins = Xswins;
+            this.names = Xsnames;
         }
     }
 }

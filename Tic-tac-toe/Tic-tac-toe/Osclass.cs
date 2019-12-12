@@ -9,10 +9,10 @@ namespace Tic_tac_toe
     class Osclass : Players
     
     {
-        public Osclass(int Wins, string Names)
+        public Osclass(int Oswins, string Osnames)
         {
-            this.Wins = wins;
-            this.Names = Names;
+            this.wins = Oswins;
+            this.names = Osnames;
         }
     }
 }

@@ -9,17 +9,20 @@ namespace Tic_tac_toe
 {
     class Players
     {
-        public int Wins { get; set; }
+        public int wins;
 
-        public string Names { get; set; }
+        public string names;
 
-        public void Iwin(Name + "wins")
+        public void Iwin()
         {
-            MessageBox.Show();
+            ++wins;
+            MessageBox.Show(names + " wins!" + names + " has " + wins + " wins");
+        }
+        public void Names()
+        {
+            
         }
     }
 
-    public class Name
-    {
-    }
+ 
 }

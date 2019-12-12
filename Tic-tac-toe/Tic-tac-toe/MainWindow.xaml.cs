@@ -21,22 +21,25 @@ namespace Tic_tac_toe
     public partial class MainWindow : Window
     {
         int XorO = 1;
-        int Oswins = 0;
-        int Xswins = 0;
+       // int Oswins = 0;
+        //int Xswins = 0;
         List<Wins> wins = new List<Wins>();
-        Osclass Os = new Wins(Oswins, Osname);
-        Xsclass Xs = new Wins(Xswins, Xsname);
+        Osclass Os = new Osclass(0, "");
+        Xsclass Xs = new Xsclass(0, "");
         private void Wins_Button_Click(object sender, RoutedEventArgs e)
         {
             foreach (Wins a in wins)
             {
-                a.Wins();
+               // a.Wins();
             }
         }
 
         public MainWindow()
         {
             InitializeComponent();
+            Os.names = Osnames.Text;
+            Xs.names = Xsnames.Text;
+
             
         }
         private void button_Copy5_Click(object sender, RoutedEventArgs e)
@@ -167,16 +170,26 @@ namespace Tic_tac_toe
 
         private void Osbutton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("O Wins!");
-            Oswins++;
-
+            Os.Iwin();
+            //MessageBox.Show(Os.names + " wins! With " + Os.wins + " wins");
         }
+
 
         private void Xsbutton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("X Wins!");
-            Xswins++;
+            Xs.Iwin();
+          //  MessageBox.Show(Xs.names + " wins! With " + Xs.wins + " wins");
 
+        }
+
+     private void Xsnames_TextChanged(object sender, TextChangedEventArgs e)
+    {
+            Xs.names = Xsnames.Text;
+        }
+
+        private void Osnames_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Os.names = Osnames.Text;
         }
     }
 }
